@@ -1,0 +1,779 @@
+body {
+    width: 800px;
+    height: 600px;
+    background-color: #202338;
+    margin: 0;
+    color: #fff;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+input {
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+button,
+.btn {
+    background-color: #546bc1;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+a,
+a:hover,
+a:active {
+    color: #fff;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.justify-start {
+    justify-content: flex-start !important;
+}
+
+.justify-end {
+    justify-content: flex-end !important;
+}
+
+.justify-between {
+    justify-content: space-between !important;
+}
+
+.justify-around {
+    justify-content: space-around !important;
+}
+
+.justify-evenly {
+    justify-content: space-evenly !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+#login {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    height: 100%;
+}
+
+#login .login-image {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login .login-image img {
+    width: 70%;
+}
+
+#login .login-right {
+    width: 55%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.login-right .login-right__content {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.login-right .welcome-image img {
+    width: 95px;
+}
+
+.login-right .welcome-message {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.login-right .login-form input {
+    display: block;
+    height: 46px;
+    border-radius: 23px;
+    width: 100%;
+    background-color: #191b29;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.login-right .login-form button {
+    display: block;
+    height: 46px;
+    border-radius: 23px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.login-right .footer {
+    position: absolute;
+    width: 100%;
+    bottom: 14px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Home Page */
+.page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.page .sidebar {
+    width: 170px;
+    background-color: #191b29;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.page .sidebar .logo {
+    padding-top: 24px;
+    padding-bottom: 48px;
+}
+
+.page .sidebar .logo img {
+    width: 85px;
+}
+
+.page .sidebar .sidebar-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page .sidebar .sidebar__menu .menu--item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 10px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.page .sidebar .sidebar__menu .menu--item.active {
+    background-color: #5368bc;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.page .sidebar .sidebar__menu .menu--item svg {
+    width: 35px;
+    margin-right: 16px;
+}
+
+.page .sidebar .sidebar-footer button {
+    display: block;
+    width: 140px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.page .page-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 16px;
+    flex: 1;
+}
+
+.page-content .header .page-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+.page-content .content-body {
+    flex: 1;
+}
+
+.page-content .footer {
+    text-align: right;
+    padding: 0 10px;
+}
+
+.page-content .footer .footer-link {
+    margin-right: 32px;
+}
+
+/* Home */
+.page-content .introbox {
+    height: 150px;
+    background-color: #191b29;
+    border-radius: 30px;
+    margin-bottom: 18px;
+    display: flex;
+    border: 1px solid #556bc1;
+}
+
+.page-content .introbox .introbox__image {
+    width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content .introbox .introbox__image img {
+    width: 90px;
+}
+
+.page-content .introbox .introbox__textbox {
+    flex: 1;
+}
+
+.page-content .introbox .introbox__textbox .view-doc {
+    background-color: #546bc1;
+    height: 38px;
+    border-radius: 19px;
+    font-size: 20px;
+    width: 226px;
+    padding: 0;
+}
+
+.page-content .introbox .introbox__textbox .introtext__title {
+    margin: 4px 0 0;
+    font-size: 24px;
+}
+
+.page-content .introbox .introbox__textbox .introtext__text {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.2;
+    padding-right: 18px;
+}
+
+.page-content .introbox .introbox__image img.medal {
+    width: 100px;
+}
+
+/* Profiles */
+.page-content .profile-form__container {
+    border-radius: 15px;
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+#profiles .page-content .content-body {
+    margin-right: 25px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content input,
+select {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #212437;
+    height: 25px;
+    border-radius: 10px;
+    margin-bottom: 9px;
+    padding: 0;
+}
+
+.page-content .select-wrapper {
+    background-color: #212437;
+    border-radius: 10px;
+    padding: 0 2px;
+    margin-bottom: 9px;
+}
+
+.page-content .select-wrapper select {
+    margin-bottom: 0;
+}
+
+.page-content select {
+    text-align: center;
+    text-align-last: center;
+}
+
+#profiles .page-content .header {
+    position: relative;
+}
+
+#profiles .page-content .header .page-title {
+    margin-left: -30px;
+}
+
+#profiles .page-content .header .load-profile {
+    position: absolute;
+    right: 43px;
+    top: 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#profiles .page-content .header .load-profile .select-wrapper {
+    margin-bottom: 0;
+    background-color: #191B29;
+    border: 1px solid #546BC0;
+    margin-right: 5px;
+}
+
+#profiles .page-content .header .load-profile select {
+    width: 136px;
+    background-color: #191b29;
+}
+
+#profiles .page-content .header .load-profile button {
+    background: none;
+    padding: 0;
+}
+
+#profiles .page-content .header .load-profile button svg {
+    height: 27px;
+    width: 27px;
+    fill: #fff;
+    margin-left: 10px;
+}
+
+
+#profiles .page-content .wide {
+    width: 235px;
+}
+
+#profiles .page-content .narrow {
+    width: 143px;
+}
+
+#profiles .page-content .select-wrapper .narrow {
+    width: 139px;
+}
+
+.divider {
+    border-bottom: 1px solid #546bc0;
+    margin-bottom: 15px;
+}
+
+#profiles .page-content .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profiles .page-content .row .card__number {
+    width: 212px;
+}
+
+#profiles .page-content .row .card__holdername {
+    width: 168px;
+}
+
+#profiles .page-content .justify-start > * {
+    margin-right: 10px;
+}
+
+#profiles .page-content .last-row.justify-start > * {
+    margin-bottom: 0;
+    margin-right: 14px;
+}
+
+#profiles .page-content .last-row .create-profile {
+    width: 150px;
+    border-radius: 16px;
+}
+
+#profiles .profiles {
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    border-radius: 15px;
+    flex: 1;
+    margin-bottom: 6px;
+}
+
+.profiles > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+    text-align: center;
+}
+
+.profiles > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profiles table th {
+    font-size: 20px;
+    background-color: #212437;
+    line-height: 1.8;
+}
+
+.profiles table td {
+    text-align: center;
+}
+
+.profiles table td .no-profile-img {
+    width: 64px;
+    margin-top: 10px;
+}
+
+.profiles table td .no-profile {
+    font-size: 24px;
+}
+
+/* Discord Monitors */
+#discord .page-content .content-body {
+    margin-right: 25px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content .discord-form__container {
+    border-radius: 15px;
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+#discord .page-content .header {
+    position: relative;
+}
+
+#discord .page-content .header .page-title {
+    /* margin-left: -30px; */
+}
+
+#discord .page-content .header .load-monitor {
+    position: absolute;
+    right: 43px;
+    top: 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#discord .page-content .header .load-monitor button {
+    background: none;
+    padding: 0;
+}
+
+#discord .page-content .header .load-monitor button svg {
+    height: 27px;
+    width: 27px;
+    fill: #fff;
+    margin-left: 10px;
+}
+
+#discord .page-content .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#discord .page-content .form-control {
+    width: 236px;
+    height: 32px;
+}
+
+#discord .page-content .form-group > * {
+    display: block;
+}
+
+#discord .page-content .form-group label {
+    font-size: 12px;
+}
+
+#discord .page-content .form-group label .question-mark {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border: 1px solid;
+    text-align: center;
+    font-size: 11px;
+}
+
+#discord .page-content .create-monitor {
+    border-radius: 10px;
+    margin-top: 14px;
+}
+
+#discord .monitors {
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    border-radius: 15px;
+    flex: 1;
+    margin-bottom: 6px;
+}
+
+.monitors > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+    text-align: center;
+}
+
+.monitors > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.monitors table th {
+    font-size: 20px;
+    background-color: #212437;
+    line-height: 1.2;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.monitors table td {
+    text-align: center;
+}
+
+.monitors table td .no-profile-img {
+    width: 64px;
+    margin-top: 10px;
+}
+
+.monitors table td .no-profile {
+    font-size: 24px;
+}
+
+/* Settings */
+
+/* switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 27px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #556bc1;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #556bc1;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 27px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* ***** */
+#settings .page-content .content-body {
+    margin-right: 25px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content .settings-form__container {
+    border-radius: 15px;
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    padding: 12px;
+    margin-bottom: 23px;
+}
+
+#settings .row {
+    display: flex;
+}
+
+#settings .row .checkbox-group {
+    width: 50%;
+    padding-left: 48px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#settings .row .checkbox-group > span {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+#settings .row .form-group.button {
+    padding-left: 48px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#settings .row button {
+    height: 36px;
+    width: 192px;
+    border-radius: 36px;
+    font-size: 20px;
+}
+
+#settings .row .form-group.input {
+    flex: 1;
+    padding: 0 8px;
+}
+
+#settings .row .form-group.input > * {
+    display: block;
+}
+
+#settings .row .input label {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+#settings .row .input .form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    margin-bottom: 0;
+}
+
+#settings .sizes {
+    background-color: #191b29;
+    border: 1px solid #5367bc;
+    border-radius: 15px;
+    flex: 1;
+    margin-bottom: 6px;
+}
+
+.sizes > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+    text-align: center;
+}
+
+.sizes > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sizes table th {
+    font-size: 20px;
+    background-color: #212437;
+    line-height: 1.8;
+}
+
+.sizes table td {
+    text-align: center;
+}
+
+.sizes table td .no-profile-img {
+    width: 64px;
+    margin-top: 10px;
+}
+
+.sizes table td .no-profile {
+    font-size: 24px;
+}
+
+.sizes .select-add-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sizes .select-add-size .select-size {
+    background-color: #191B29;
+    border-radius: 10px;
+    border: 1px solid #546BC0;
+    padding: 0 2px;
+    margin-right: 20px;
+}
+
+
+.sizes .select-add-size select {
+    margin-bottom: 0;
+    height: 27px;
+    background-color: #191B29;
+    width: 133px;
+}
+
+.sizes .select-add-size .add-size button {
+    height: 29px;
+    width: 149px;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 0;
+}
